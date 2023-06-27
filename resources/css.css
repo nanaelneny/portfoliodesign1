@@ -1,0 +1,202 @@
+/*universal rules*/
+html {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(219, 215, 209);
+    
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.nav a {
+    text-decoration: none;
+    color: black;
+    transition: all 0.5s ease-in;
+}
+.nav a:hover {
+    color: rgb(192, 47, 47);
+    border-bottom: 4px solid rgb(192, 47, 47);
+}
+
+h2 {
+    text-transform: capitalize;
+}
+/* header section*/
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid rgb(85, 84, 84);
+    text-align: center;
+}
+h1 {
+    font-size: 3rem;
+    text-transform: capitalize;
+    margin-right: 12rem;
+}
+header ul {
+    display: flex;
+    justify-content: space-around;
+}
+header ul li {
+    list-style: none;
+    margin-left: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+/* main section */
+.about {
+    display: flex;
+}
+ p {
+    font-size: 1.2rem;
+}
+figure {
+    width: 16rem;
+    height: 16rem;
+   
+}
+
+figure img {
+    width: 80%;
+    height: 80%;
+    margin-left: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projects ul li {
+    list-style:  circle;
+    background-color: rgb(236, 226, 213);
+    margin: 0.3rem;
+    font-size: 1.2rem;
+}
+
+.projects ul {
+    margin-bottom: 3rem;
+}
+
+.skills,
+.contact {
+    margin-bottom: 3rem;
+}
+
+.skills-icons img,
+.contact-icons img {
+    width: 2.5rem;
+    height: 2.5rem;  
+    animation: bounceIn 2s; 
+}
+
+.skills-icons,
+.contact-icons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-icons {
+    width: 50%;
+}
+
+.contact-icons {
+    width: 30%;
+}
+
+span {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.skills-icons img:hover,
+.contact-icons img:hover {
+    /* width: 3.125rem;
+    height: 3.125rem;
+    transition: all 1s ease-out; */
+    animation: rotation 2s infinite linear;
+}
+
+
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+    
+}
+@media only screen and (max-width: 958px){
+    .nav{
+        display: none;
+    }
+    header h1 {
+        text-transform: uppercase;
+        margin-left: 10rem;
+    }
+    
+    header {
+        border-bottom: none;
+    }
+
+    figure {
+        width: 100%;
+        height: 100%;
+       
+    }
+    
+    figure img {
+        width: 80%;
+        height: 80%;
+        margin-left: 2rem;
+        
+    }
+
+    article p {
+        font-size: 1.2rem;
+    }
+
+}
+
+@media only screen and (max-width: 1110px) {
+    .projects ul li {
+        list-style:  none;
+    }
+
+    .projects,
+    .skills,
+    .contact,
+    .about,
+    header {
+        margin-left: 3rem;
+    }
+}
+@media only screen and (max-width: 630px) {
+    .projects {
+        margin-top: 1.6rem;
+    }
+}
