@@ -20,6 +20,7 @@ html {
     opacity: 0.7;
     background-blend-mode: overlay;
     height: 25rem;
+    width: 100%;
 }
 
 .banner h1 {
@@ -88,4 +89,18 @@ footer p {
 footer span {
     font-weight: 900;
     font-style: italic;
+}
+
+@media only screen and (max-width: 995px){
+    .banner {
+        width: 100%;
+        background-image: url(./images/pQbhyVA.jpg);
+        color: rgb(12, 12, 12);
+    }
+
+    .banner h1,
+    .banner p {
+        color: rgb(0, 0, 0);
+        font-weight: 900;
+    }
 }
