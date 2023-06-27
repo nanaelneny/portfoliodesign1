@@ -73,3 +73,7 @@ textarea {
 span a {
     color: #c343dd;
 }
+
+form p {
+    color: rgb(24, 23, 23);
+}
