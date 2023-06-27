@@ -1,0 +1,168 @@
+@font-face {
+    font-family: "myfonts";
+    src: url("../fonts/allerta-stencil-v18-latin/allerta-stencil-v18-latin-regular.woff2") format("woff2"),
+         url("../fonts/allerta-stencil-v18-latin/allerta-stencil-v18-latin-regular.woff") format("woff"),
+         url("../fonts/allerta-stencil-v18-latin/allerta-stencil-v18-latin-regular.ttf") format("truetype");
+  }
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: lightsalmon;
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+}
+
+/* navigations */
+.top {
+    position: relative;
+    top: 0;
+    margin-top: 0;
+}
+.bottom {
+    position: relative;
+    bottom: 0;
+    margin-bottom: 0;
+}
+
+.side {
+    display: flex;
+    align-items: flex-end;
+    height: 2.6rem;
+    background-color: hsl(179, 91%, 27%);
+    padding-bottom: 0.5rem;
+}
+
+.side li {
+    list-style: none;
+    margin-right: 5rem;
+}
+
+.side a {
+    color: lightsalmon;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side li:first-child {
+    margin-left: 2rem;
+}
+
+@media only screen and (max-width: 640px){
+    .side {
+        display: none;
+    }
+}
+
+/* header section */
+
+header {
+    background-color: 	hsla(20, 86%, 19%, 0.692);
+    margin-bottom: 17rem;
+    margin-top: 10rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-family: "myfonts";
+    font-size: 1.5rem;
+    color: hsl(0, 0%, 98%);
+}
+
+ /* mission statement */
+.mission-statement {
+    margin-left: 1rem;
+    margin-bottom: 4rem;
+}
+
+.mission-statement h2 {
+    color: yellow;
+}
+
+.mission-statement p {
+    color: #fff;
+}
+
+
+
+/* activities photo section */
+.activities {
+    display: flex;
+    justify-content: center;
+}
+
+.activities img {
+    width: 30%;
+    margin: 1.5%;
+}
+@media only screen and (max-width: 1100px) {
+    .activities {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .activities img {
+        width: 95%;
+        height: auto;
+        margin: 1rem;
+    }
+}
+/* quote section */
+
+.quote {
+    background-color: hsl(179, 91%, 27%);
+    padding: 0.3rem 0.7rem 12rem;
+    margin: 5.5rem 0;
+    line-height: 1.5;
+}
+
+.quote .bigger {
+    font-size: 2.64rem;
+    font-weight: 600;
+}
+
+.quote p {
+    color: yellow;
+}
+
+@media only screen and (max-width: 1100px) {
+    .quote p {
+        text-align: center;
+    }
+}
+/* invitation section */
+
+.invitation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+
+.invitation h2 {
+    color: yellow;
+    font-size: 2rem;
+}
+
+.invitation img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    width: 850px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .invitation {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;     
+    }
+
+    .invitation img {
+        width: 70%;
+        margin: auto;
+        display: block;
+    }
+}

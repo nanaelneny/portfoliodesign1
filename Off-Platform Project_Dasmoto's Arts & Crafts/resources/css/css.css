@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'MyRoboto';
+    src: url('../fonts/Roboto/roboto-v30-latin-100.woff2') format('woff2'),
+         url('../fonts/Roboto/roboto-v30-latin-100.woff') format('woff'),
+         url('../fonts/Roboto/roboto-v30-latin-100.ttf') format('ttf');
+}
+
+* {
+    box-sizing: border-box;
+
+}
+body {
+    font-family: Helvetica;
+
+}
+
+.banner {
+    font-size: 70px;
+    font-weight: bold;
+    color: khaki;
+    background-image: url('../images/pattern.jpeg');
+    text-align: center;
+}
+
+h2 {
+    font-family: Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    padding-left: 10px;
+}
+
+.brushes h2 {
+    background-color: mediumspringgreen;
+}
+
+.frames h2 {
+    background-color: lightcoral;
+}
+
+.paint h2{
+    background-color: skyblue;
+}
+
+strong {
+    color: blue;
+}
+
+p {
+    font-family: 'MyRoboto';
+    font-size: 20px;
+}
+
+figure {
+    margin-left: 0;
+}
