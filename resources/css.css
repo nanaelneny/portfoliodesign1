@@ -189,7 +189,13 @@ span {
 
 }
 
+@media only screen and (max-width: 1145px) {
+    body {
+        background-position: center;
+        background-size: cover;
 
+    }
+}
 @media only screen and (max-width: 1110px) {
     .projects ul li {
         list-style:  none;
@@ -206,5 +212,13 @@ span {
 @media only screen and (max-width: 630px) {
     .projects {
         margin-top: 1.6rem;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    body {
+        background-position: center;
+        background-size: cover;
+
     }
 }
