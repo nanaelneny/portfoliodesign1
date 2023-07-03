@@ -7,7 +7,7 @@ function flipImage(){
     document.body.style.backgroundImage = "url(./resources/images/maximiliano-moretto-nazgul-1500.jpg)";
     document.body.style.backgroundRepeat = "no-repeat";
     document.body.style.backgroundSize = "cover";
-    document.body.style.backgroundPosition = "0 -100px";
+    document.body.style.backgroundPosition = "center";
 };
 
 function flipBack(){
